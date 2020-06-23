@@ -1,0 +1,49 @@
+div.table{
+    width: 80%;
+    height: auto;
+    background: beige;
+    margin: auto;
+    border: 1px solid burlywood}
+
+.droite, .gauche{height: 400px;
+width: 50%;
+float: left}
+
+label.titre{
+    margin-top: 6px;
+    text-align: center;
+    width: 100%;
+    color: burlywood;
+    float: left
+}
+
+input, select, textarea{
+    width: 95%;
+    margin-top: 5px;
+    background: snow;
+    color: gray}
+
+textarea{resize: none}
+
+div.bas{width: 250px;
+margin: auto;
+height: auto;
+color: burlywood;
+font-size: 13px}
+
+.radio{width: 10px}
+
+.men{background: skyblue;
+color: black}
+
+.women{background: papayawhip;
+color: black}
+
+.input{width: 100%;
+    margin-bottom: 20px;
+    background: burlywood;
+    color: snow;
+    font-size: 20px;
+    cursor: pointer
+}
+

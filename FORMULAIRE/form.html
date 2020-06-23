@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <meta name="description" content="qui quoi ou">
+</head>
+<body>
+    
+    <form action="contact.php" method="post">
+      
+       <div class="table">
+      
+              <div class="gauche">
+              <label for="nom" class="titre">Nom :</label>
+              <label for="prenom" class="titre">Pr&eacute;nom :</label>
+              <label for="email" class="titre">Email</label>
+              <label for="telephone" class="titre">T&eacute;l&eacute;phone :</label>
+              <label for="choix" class="titre">Choix :</label>
+              <label for="message" class="titre">Message :</label>
+               </div>
+    
+              
+              
+              
+              
+              <div class="droite">
+                  
+                  <div class="zone">
+                      <input type="text" id="nom" name="nom" required placeholder="Nom">
+                  </div>
+                  
+                  <div class="zone">
+                      <input type="text" id="prenom" name="prenom" required placeholder="Prenom">
+                  </div>
+                  
+                  <div class="zone">
+                      <input type="email" id="email" name="mail" required>
+                  </div>
+                  
+                  <div class="zone">
+                      <input type="tel" id="telephone" name="telephone">
+                  </div>
+                  
+                
+                  
+                  
+                  
+                  <select name="objet" id="choix">
+            onChange="location.href=''+this.options[this.selectedIndex].value+'.html';"
+                    
+                     <optgroup label="homme" class="men">
+                      <option value="#" selected>Selectionnez</option>
+                      
+                      <option value="index">Accueil</option>
+                      
+                      <option value="apropos" selected>A propos</option>
+                      
+                      <!-- C'est pour identifier le pays d'orgine de l'user-->
+                      <option value="contact">Talon Taille 38 rouge</option>
+                      
+                      <!--33_18_14 représente le numéro de nomenclature pour les boutiques et les magasins pour identifier les produits-->
+                      <option value="choix1" selected>Votre Choix 1</option>
+                      </optgroup>
+                      
+                      
+                      <!--femme -->
+                      <optgroup label="femme" class="women">
+                      <option value="#">Selectionnez</option>
+                      
+                      <option value="rdv">Rendez-vous</option>
+                      
+                      <option value="fr">France</option>
+                      <!--selected-->
+                      
+                      <option value="33_18_14">Talon Taille 38 rouge</option>
+                      
+                      <option value="choix1" selected>Votre Choix 1</option>
+                      
+                    </optgroup>
+
+                  </select>
+           
+           
+           <div class="zone">
+               <textarea name="message" id="message" rows="10">
+               </textarea>
+           </div>   
+             
+    </div>
+<!--fin div droite-->
+        <div class="bas">
+            <input type="radio" name="age" value="10-15" class="radio"> 10-15
+            <input type="radio" name="age" value="15-20" class="radio"> 15-20
+            <input type="radio" name="age" value="20-25" class="radio"> 20-25
+            <!--si la valeur/value est différente, on ne pourra cocher qu'une seule;
+            si la valeur est identique, on pourra cocher plusieurs-->
+        </div>        
+        
+        <div class="bas">
+            <input type="checkbox" name="ok" value="accept" class="radio" checked>J'ai lu et accepte les conditions g&eacute;n&eacute;rales.
+            <input type="checkbox" name="news" value="news" class="radio">Recevoir la newsletter.
+        </div>
+        
+        <div class="bas">
+            <input type="submit" name="envoi" id="submit" value="Envoyer" class="input">
+        </div>
+        
+ </div>
+    
+    </form>
+        
+    
+    
+    
+</body>
+</html>
